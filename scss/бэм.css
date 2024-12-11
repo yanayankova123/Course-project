@@ -1,0 +1,207 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  width: 1440px;
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("../../ofont.ru_Impact.ttf");
+}
+header {
+  margin: 38px 146px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__title {
+  font-family: "Inter";
+  font-size: 24px;
+}
+header .header__logo {
+  width: 65px;
+  height: 65px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+.intro .intro__block {
+  width: 951px;
+  height: 700px;
+  background-image: url("../../photo/ds.jpg");
+  border-radius: 20px;
+  background-size: cover;
+}
+.intro .intro__block .intro__content {
+  margin: 0 auto;
+  margin-top: 120px;
+  color: rgb(255, 255, 255);
+}
+.intro .intro__block .intro__content .intro__title {
+  font-family: "Impact";
+  font-size: 75px;
+  line-height: 1;
+  text-align: center;
+  margin-left: 6px;
+  margin-bottom: 20px;
+  padding-right: 4px;
+}
+.intro .intro__block .intro__content .intro__subtitle {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+}
+.intro .intro__button {
+  width: 321px;
+  height: 79px;
+  background-color: #CDCDCD;
+  border-radius: 27px;
+  font-family: "Impact";
+  font-size: 24px;
+  border: 0px;
+  color: #1B2C4A;
+  margin-top: 40px;
+  margin-left: 312px;
+  box-shadow: 8px 11px 14px 0 #a3a3a3;
+}
+.intro .intro__features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 665px;
+  height: 151px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 45px;
+  gap: 62px;
+}
+.intro .intro__features .feature--weeks {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-family: "Impact";
+}
+.intro .intro__features .feature--weeks .feature__icon--weeks {
+  background-image: url("../../photo/иконка1.png");
+  width: 100px;
+  height: 107px;
+}
+.intro .intro__features .feature--weeks .feature__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.intro .intro__features .feature--portfolio {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-family: "Impact";
+}
+.intro .intro__features .feature--portfolio .feature__icon--portfolio {
+  background-image: url("../../photo/иконка1.png");
+  width: 106px;
+  height: 106px;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+.intro .intro__features .feature--portfolio .feature__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-top: 6px;
+  margin-right: 18px;
+}
+.intro .intro__block--secondary {
+  display: flex;
+  width: 480px;
+  height: 704px;
+  border-radius: 20px;
+  background-image: url("../../photo/house-3d.png");
+  background-repeat: no-repeat;
+}
+
+.course-program .course-program__title {
+  font-size: 64px;
+  color: white;
+  font-family: "Impact";
+  margin-bottom: 45px;
+  margin-top: 119px;
+  margin-left: 146px;
+}
+.course-program .course-program__content {
+  margin-bottom: 0px;
+}
+.course-program .course-program__content .course-program__details {
+  position: relative;
+  display: block;
+  max-width: 800px;
+  margin-left: 145px;
+  margin-bottom: 10px;
+  background: #494949;
+  border-radius: 20px;
+  transition: 0.3s;
+  overflow: hidden;
+  font-family: "Inter";
+  font-size: 16px;
+}
+.course-program .course-program__content .course-program__details .course-program__summary {
+  z-index: 10;
+  position: relative;
+  background: #363636;
+  border-radius: 5px;
+  padding: 21px 0px 22px 42px;
+  font-size: 20px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  transition: 0.3s;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+}
+.course-program .course-program__content .course-program__details .course-program__description {
+  z-index: 0;
+  position: relative;
+  padding: 32px;
+  font-size: 18px;
+  margin-top: -100px;
+  transition: 0.3s;
+}
+.course-program .course-program__content .course-program__details .course-program__description p:last-child {
+  margin-bottom: 0;
+}
+.course-program .course-program__content .course-program__details .course-program__description p:first-child {
+  margin-top: 0;
+}
+.course-program .course-program__content .course-program__details::after {
+  z-index: 12;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  transition: 0.3s;
+}
+.course-program .course-program__content .course-program__details[open]::after {
+  transform: rotate(45deg);
+}
+.course-program .course-program__content .course-program__details[open] .course-program__description {
+  margin-top: 0;
+}/*# sourceMappingURL=бэм.css.map */

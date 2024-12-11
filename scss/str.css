@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+}
+
+header {
+  margin: 38px 146px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header {
+  font-family: "Inter";
+  font-size: 24px;
+  color: white;
+}
+header img {
+  width: 65px;
+  height: 65px;
+}
+
+.obertka {
+  border-radius: 60px;
+  border: 1px solid rgb(91, 91, 91);
+  text-align: center;
+  width: 800px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+.obertka .zagol {
+  font-size: 230px;
+  font-family: "Inter";
+  color: #305493;
+  font-weight: 900;
+  margin-top: 80px;
+}
+.obertka .text {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 50px;
+}
+.obertka button {
+  text-align: center;
+  width: 341px;
+  height: 96px;
+  background-color: #1B2C4A;
+  border: 0px;
+  border-radius: 40px;
+  box-shadow: 2px 5px 10px 0 #eaeaea;
+  color: white;
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.img {
+  background-image: url(/kyrsovayaa/photo/gg.png);
+  width: 665px;
+  height: 543px;
+  background-repeat: no-repeat;
+  margin-top: 42px;
+  margin-right: 66px;
+}
+
+.ob {
+  display: flex;
+  margin-top: 100px;
+}/*# sourceMappingURL=str.css.map */
